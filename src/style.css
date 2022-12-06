@@ -2,6 +2,16 @@ body {
   background-color: bisque;
 }
 
-.hello {
-    color: red;
-  }
+#app {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.list_label {
+  display: block;
+}
+
+.li_todo {
+  list-style: none;
+}
