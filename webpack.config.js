@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js',
+    bundle: path.resolve(__dirname, 'src/index.js'),
   },
   devServer: {
     static: './dist',
@@ -18,6 +18,7 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    assetModuleFilename: '[name][ext]',
   },
   optimization: {
     runtimeChunk: 'single',
