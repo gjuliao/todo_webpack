@@ -87,7 +87,7 @@ and follow these steps.
 Clone this repository to your desired folder:
 
 1. Download the **Zip** file or clone the repo with:
-   `bash git clone git@github.com:gjuliao/awesome_books_modules.git`
+   `bash git clone git@github.com:gjuliao/todo_webpack.git`
 2. To access cloned directory run:
    `bash cd awesome_books_modules `
 3. Open it with the live server
@@ -172,13 +172,13 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-- **[Question_1]**
+- **[Can I copy this project?]**
 
-  - [Answer_1]
+  - [Yes, you can!]
 
-- **[Question_2]**
+- **[Do I have to give credits if I copy the project?]**
 
-  - [Answer_2]
+  - [Not needed, but would be great if you do and also it's coding best practice.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
