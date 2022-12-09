@@ -28,6 +28,13 @@ const displayTodos = () => {
       todoCollection.updateDescription(index + 1, description.value);
     });
   });
+  const trashes = todosElement.querySelectorAll('.delete');
+  trashes.forEach((trash, index) => {
+    trash.addEventListener('click', () => {
+      todoCollection.removeTodo(index);
+      displayTodos();
+    });
+  });
 };
 
 export default displayTodos;

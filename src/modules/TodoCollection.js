@@ -19,12 +19,22 @@ export default class TodoCollection {
     this.resetIndex();
   }
 
+  updateDescription(index, description) {
+    for (let i = 0; i < this.todos.length; i += 1) {
+      if (this.todos[i].index === index) {
+        this.todos[i].description = description;
+        this.setToLocalStorage();
+        break;
+      }
+    }
+  }
+
   setToLocalStorage() {
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
 
   getTodos() {
-    return this.todos.sort((a, b) => b.index - a.index);
+    return this.todos.sort((a, b) => a.index - b.index);
   }
 
   resetIndex() {
@@ -44,16 +54,6 @@ export default class TodoCollection {
     for (let i = 0; i < this.todos.length; i += 1) {
       if (this.todos[i].index === index) {
         this.todos[i].completed = !this.todos[i].completed;
-        this.setToLocalStorage();
-        break;
-      }
-    }
-  }
-
-  updateDescription(index, description) {
-    for (let i = 0; i < this.todos.length; i += 1) {
-      if (this.todos[i].index === index) {
-        this.todos[i].description = description;
         this.setToLocalStorage();
         break;
       }
