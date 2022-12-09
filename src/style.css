@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 ul,
@@ -30,15 +31,14 @@ body {
 }
 
 #app {
-  background-color: var(--white-background);
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  margin: 84px 12px 0 12px;
-  width: 100%;
+  box-shadow: 0 0 20px darkgray;
+  padding: 1rem;
+  width: 90%;
   max-width: 40%;
 }
 
