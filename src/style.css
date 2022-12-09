@@ -1,17 +1,152 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  background-color: bisque;
+  color: black;
+  line-height: 1.5;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #app {
-  width: 50%;
-  margin: auto;
-  text-align: center;
+  background-color: var(--white-background);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 84px 12px 0 12px;
+  width: 100%;
+  max-width: 40%;
 }
 
-.list_label {
-  display: block;
+#app h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.li_todo {
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.add-new-task {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.add-new-task input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.add-new-task button {
+  background-color: var(--light-background-color);
+  border: none;
+  cursor: pointer;
+}
+
+#todos {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 0.5rem;
+  overflow-y: scroll;
+}
+
+#todos li {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+.todo {
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.todo,
+.add-new-task {
+  border-bottom: 1px solid #ccc;
+}
+
+#checked {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+}
+
+#listItem {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.delete {
+  cursor: pointer;
+  display: none;
+}
+
+.move {
+  display: block;
+  cursor: move;
+}
+
+.clear-completed {
+  background-color: var(--light-background-color);
+  padding: 0.8rem;
+  border: none;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.clear-completed:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.selection {
+  background-color: #ccc;
+}
+
+#todos::-webkit-scrollbar {
+  display: none;
+}
+
+input:checked + input {
+  text-decoration: line-through;
+  color: #ccc;
+  font-style: italic;
 }
