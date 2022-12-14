@@ -37,7 +37,7 @@
 
 # 📖 [Todo App Webpack] <a name="about-project"></a>
 
-**[Awesome Books ES6]** Is a website app of a Todo list using ES6 and webpack.
+**Awesome Books ES6** Is a website app of a Todo list using ES6 and webpack.  Scripts are built with type modules, and elements added can be saved, removed and edited from local storage.
 
 ## 🛠 Built With <a name="built-with"></a>
 
