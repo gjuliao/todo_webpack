@@ -61,11 +61,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!--  LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Intro Video & Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://gjuliao.github.io/todo_webpack/dist/)
+- [Zoom Intro Video](https://drive.google.com/file/d/1fs45-OtzGWLMhOsZhKPy7a0aCFy1Gnin/view?usp=sharing)
+
+- [Live Demo Link]([https://gjuliao.github.io/todo_webpack/dist/](https://oscar-espinoza.github.io/pokedex/dist))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
